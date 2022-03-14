@@ -127,10 +127,10 @@
 .Seleccion button {grid-area: boton;} 
 .Seleccion footer {grid-area: pie;} 
 
-  /* Pagina comunicarte  */
+  /* Pagina contacto  */
 .comunicarte {
         background: rgb(131,58,180);
-        background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 5%, rgba(253,47,34,1) 8%, rgba(252,176,69,1) 51%, rgba(252,176,69,1) 77%); 
+        background: linear-gradient(90deg, rgb(146, 128, 108) 0%, rgb(223, 174, 174) 5%, rgb(199, 118, 112) 18%, rgba(252,176,69,1) 51%, rgba(252,176,69,1) 77%); 
         padding-left:50px;
         
 }
