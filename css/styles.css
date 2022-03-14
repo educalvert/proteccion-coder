@@ -67,10 +67,9 @@
 75%{width: 80px;}
 100%{width: 60px;}}
 
-
-
 .footer__logo img { width: 60px; transition: all 2s;animation-name: efectoss;animation-timing-function: linear;animation-duration: 10s;animation-iteration-count: infinite; }
 .footer__logo img:hover{transform: rotate(360deg);}
+
 /* Página Proteger */
  .estructura { 
         
@@ -131,11 +130,14 @@
 .comunicarte {
         background: rgb(131,58,180);
         background: linear-gradient(90deg, rgb(146, 128, 108) 0%, rgb(223, 174, 174) 5%, rgb(199, 118, 112) 18%, rgba(252,176,69,1) 51%, rgba(252,176,69,1) 77%); 
-        padding-left:50px;
+        padding-left:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
         
 }
-   
-        /* Uso común  */
+
 
 .texto_casual{font-family: Helvetica;font-size: 100%;color: red;}
 
