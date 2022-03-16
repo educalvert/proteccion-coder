@@ -122,7 +122,7 @@
 .Seleccion .check9 input{grid-area:check9;width: 40px;height: 40px;}                                              v
 .Seleccion button {grid-area: boton;} 
 .Seleccion footer {grid-area: pie;} 
-
+.check{width: 40px;height: 40px}
   /* Pagina contacto  */
 .comunicarte {
         background: rgb(131,58,180);
