@@ -14,7 +14,12 @@
 .header__logo img { width: 80px;transition: all 4s; }
 .header__logo img:hover{transform: rotate(360deg);}
 .header__lista { display: flex;  flex-direction: row;   gap: 2rem; }
-.header__link { color: rgb(0, 4, 255);   font: oblique bold 120% cursive; }
+.header__link { color: rgb(0, 4, 255);   font: oblique bold 120%; }
+.header__link:hover{color: brown;}
+.enlace_activo{padding-left: 4px;
+        padding-right: 4px;
+        color: #ffffff; 
+        background:#047dee}
 /* Fin del header */
 
 
@@ -60,15 +65,15 @@
 .tituloh3{
         font-size: 20px;
 }
-.footer{justify-content:space-between;}
+.futer{justify-content:space-between;}
 @keyframes efectoss{0%{width: 60px;}
 25%{width: 80px;}
 50%{width: 100px;}
 75%{width: 80px;}
 100%{width: 60px;}}
 
-.footer__logo img { width: 60px; transition: all 2s;animation-name: efectoss;animation-timing-function: linear;animation-duration: 10s;animation-iteration-count: infinite; }
-.footer__logo img:hover{transform: rotate(360deg);}
+.futer__logo img { width: 60px; margin-top:4.5rem;transition: all 2s;animation-name: efectoss;animation-timing-function: linear;animation-duration: 10s;animation-iteration-count: infinite; }
+.futer__logo img:hover{transform: rotate(360deg);}
 
 /* Página Proteger */
  .estructura { 
