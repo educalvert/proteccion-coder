@@ -65,7 +65,9 @@
 .tituloh3{
         font-size: 20px;
 }
-.futer{justify-content:space-between;}
+.futer{display: flex;
+        flex-direction: row;
+        }
 @keyframes efectoss{0%{width: 60px;}
 25%{width: 80px;}
 50%{width: 100px;}
