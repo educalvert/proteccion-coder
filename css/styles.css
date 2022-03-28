@@ -1,208 +1,327 @@
+@charset "UTF-8";
 /* Este header lo comparten todas las páginas */
 .header__contenedor {
-        height: 100px;
-        box-shadow: 0px 2px 10px rgb(165, 171, 196);
-        padding: 10px;
-        width: 97%;
-        position: relative;
-        height: 100%;
-        margin: 10px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-background-color: rgb(202, 202, 202);
-border: double 1px; }
-.header__lista{ list-style: none; }
-.header__logo img { width: 80px;transition: all 4s; }
-.header__logo img:hover{transform: rotate(360deg);}
-.header__lista { display: flex;  flex-direction: row;   gap: 2rem; }
-.header__link { color: rgb(0, 4, 255);   font: oblique bold 120%; }
-.header__link:hover{color: brown;}
-.enlace_activo{padding-left: 4px;
-        padding-right: 4px;
-        color: #ffffff; 
-        background:#047dee}
+  height: 100px;
+  box-shadow: 0px 2px 10px #a5abc4;
+  padding: 10px;
+  width: 97%;
+  position: relative;
+  height: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header__lista {
+  list-style: none; }
+
+.header__logo img {
+  width: 80px;
+  transition: all 4s; }
+
+.header__logo img:hover {
+  transform: rotate(360deg); }
+
+.header__lista {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; }
+
+.header__link {
+  color: #0004ff;
+  font: oblique bold 120%; }
+
+.header__link:hover {
+  color: brown; }
+
+.enlace_activo {
+  padding-left: 4px;
+  padding-right: 4px;
+  color: #ffffff;
+  background: #047dee; }
+
 /* Fin del header */
-
-
 /* Página index */
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 100px 200px 200px 100px;
+  grid-template-areas: "foto foto foto" "titulo titulo titulo" "vertical foto2 servicio" "vertical foto3 producto" "footer footer footer";
+  justify-items: center;
+  grid-row-gap: 10px; }
 
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 100px 200px 200px 100px;
-    grid-template-areas:
-    "foto foto foto"
-    "titulo titulo titulo"
-    "vertical foto2 servicio"
-    "vertical foto3 producto"
-    "footer footer footer";
-    justify-items: center;
-    grid-row-gap:10px ;
-    }
-   
-.grilla .foto {grid-area: foto;}
-.grilla .titulo{grid-area: titulo;font-family: Helvetica;font-size: 200%;color: red;}
-.grilla .vertical{grid-area: vertical;border:5px solid rgb(230, 144, 144);overflow: hidden;}
-.grilla .foto2{grid-area: foto2;}
-.grilla .foto3{grid-area: foto3;}
-.grilla .servicio{grid-area:servicio;}
-.grilla .producto{grid-area:producto;}
-.grilla .footer{grid-area: footer;
-        display: flex; 
-        justify-self: stretch;}
+.grilla .foto {
+  grid-area: foto; }
 
-.foto img{width: 100%;height: 100%;}
-.foto2 img{width: 100%;height: 100%;}
-.foto3 img{width: 100%;height: 100%;}
-.vertical_flex  img{width: 80%;height: auto;}
-.vertical_flex{display: flex; flex-direction: column;justify-content: right;align-items: center;text-align: center; }
-.grilla .servicio ul{ list-style: none; margin: 0;  padding: 0;}
- .grilla .servicio{ margin-left: 25px; } 
+.grilla .titulo {
+  grid-area: titulo;
+  font-family: Helvetica;
+  font-size: 200%;
+  color: red; }
 
-.grilla .producto ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;}
-.tituloh3{
-        font-size: 20px;
-}
-.ajusto{height: 300px;}
-.futer{display: flex;
-        flex-direction: row;
-        }
-@keyframes efectoss{0%{width: 60px;}
-25%{width: 80px;}
-50%{width: 100px;}
-75%{width: 80px;}
-100%{width: 60px;}}
+.grilla .vertical {
+  grid-area: vertical;
+  border: 5px solid #e69090;
+  overflow: hidden; }
 
-.futer__logo img { width: 60px; margin-top:4.5rem;transition: all 2s;animation-name: efectoss;animation-timing-function: linear;animation-duration: 10s;animation-iteration-count: infinite; }
-.futer__logo img:hover{transform: rotate(360deg);}
+.grilla .foto2 {
+  grid-area: foto2; }
+
+.grilla .foto3 {
+  grid-area: foto3; }
+
+.grilla .servicio {
+  grid-area: servicio; }
+
+.grilla .producto {
+  grid-area: producto; }
+
+.grilla .footer {
+  grid-area: footer;
+  display: flex;
+  justify-self: stretch; }
+
+.foto img {
+  width: 100%;
+  height: 100%; }
+
+.foto2 img {
+  width: 100%;
+  height: 100%; }
+
+.foto3 img {
+  width: 100%;
+  height: 100%; }
+
+.vertical_flex img {
+  width: 80%;
+  height: auto; }
+
+.vertical_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  text-align: center; }
+
+.grilla .servicio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.grilla .servicio {
+  margin-left: 25px; }
+
+.grilla .producto ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.tituloh3 {
+  font-size: 20px; }
+
+.ajusto {
+  height: 300px; }
+
+.futer {
+  display: flex;
+  flex-direction: row; }
+
+@keyframes efectoss {
+  0% {
+    width: 60px; }
+  25% {
+    width: 80px; }
+  50% {
+    width: 100px; }
+  75% {
+    width: 80px; }
+  100% {
+    width: 60px; } }
+
+.futer__logo img {
+  width: 60px;
+  margin-top: 4.5rem;
+  transition: all 2s;
+  animation-name: efectoss;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+.futer__logo img:hover {
+  transform: rotate(360deg); }
 
 /* Página Proteger */
- .estructura { 
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5rem;
-        max-width: 1000px;
-        width:80%;
-        min-height: 500px;
-        padding: 1rem; 
-   } 
-    
-.Seleccion { display: grid;       
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px repeat(3,3fr 1fr) 100px 100px;
-        grid-template-areas: 
-        "titul titul titul"
-        "heladera lavarropas lavavajillas"
-        "check1 check2 check3"
-        "horno batidora cafetera"
-        "check4 check5 check6"
-        "aspiradora celular laptop"
-        "check7 check8 check9"
-        "boton boton boton"
-        "pie pie pie";
-        justify-items: center;
-                
-}
+.estructura {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  max-width: 1000px;
+  width: 80%;
+  min-height: 500px;
+  padding: 1rem; }
 
+.Seleccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px repeat(3, 3fr 1fr) 100px 100px;
+  grid-template-areas: "titul titul titul" "heladera lavarropas lavavajillas" "check1 check2 check3" "horno batidora cafetera" "check4 check5 check6" "aspiradora celular laptop" "check7 check8 check9" "boton boton boton" "pie pie pie";
+  justify-items: center; }
 
-.Seleccion img{width: 100%; }
-.Seleccion #titulo{grid-area:titul;font-family: Helvetica;font-size: 40px;color: red;}
-.Seleccion .heladera {grid-area:heladera;}
-.Seleccion .aspiradora {grid-area:aspiradora;}
-.Seleccion .batidora {grid-area:batidora;}
-.Seleccion .cafetera {grid-area:cafetera;}
-.Seleccion .celular {grid-area:celular;}
-.Seleccion .lavavajillas {grid-area:lavavajillas;}
-.Seleccion .horno {grid-area:horno;}
-.Seleccion .laptop {grid-area:laptop;}
-.Seleccion .lavarropas{grid-area:lavarropas;}
-.Seleccion .check1 input {grid-area:check1; width: 40px;height: 40px;}
-.Seleccion .check2 input{grid-area:check2;width: 40px;height: 40px;}
-.Seleccion .check3 input{grid-area:check3;width: 40px;height: 40px;}
-.Seleccion .check4 input{grid-area:check4;width: 40px;height: 40px;}
-.Seleccion .check5 input {grid-area:check5;width: 40px;height: 40px;}
-.Seleccion .check6 input{grid-area:check6;width: 40px;height: 40px;}
-.Seleccion .check7 input{grid-area:check7;width: 40px;height: 40px;}
-.Seleccion .check8 input{grid-area:check8;width: 40px;height: 40px;}
-.Seleccion .check9 input{grid-area:check9;width: 40px;height: 40px;}                                              v
-.Seleccion button {grid-area: boton;} 
-.Seleccion footer {grid-area: pie;} 
-.check{width: 40px;height: 40px}
-  /* Pagina contacto  */
+.Seleccion img {
+  width: 100%; }
+
+.Seleccion #titulo {
+  grid-area: titul;
+  font-family: Helvetica;
+  font-size: 40px;
+  color: red; }
+
+.Seleccion .heladera {
+  grid-area: heladera; }
+
+.Seleccion .aspiradora {
+  grid-area: aspiradora; }
+
+.Seleccion .batidora {
+  grid-area: batidora; }
+
+.Seleccion .cafetera {
+  grid-area: cafetera; }
+
+.Seleccion .celular {
+  grid-area: celular; }
+
+.Seleccion .lavavajillas {
+  grid-area: lavavajillas; }
+
+.Seleccion .horno {
+  grid-area: horno; }
+
+.Seleccion .laptop {
+  grid-area: laptop; }
+
+.Seleccion .lavarropas {
+  grid-area: lavarropas; }
+
+.Seleccion .check1 input {
+  grid-area: check1;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check2 input {
+  grid-area: check2;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check3 input {
+  grid-area: check3;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check4 input {
+  grid-area: check4;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check5 input {
+  grid-area: check5;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check6 input {
+  grid-area: check6;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check7 input {
+  grid-area: check7;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check8 input {
+  grid-area: check8;
+  width: 40px;
+  height: 40px; }
+
+.Seleccion .check9 input {
+  grid-area: check9;
+  width: 40px;
+  height: 40px; }
+
+v
+.Seleccion button {
+  grid-area: boton; }
+
+.Seleccion footer {
+  grid-area: pie; }
+
+.check {
+  width: 40px;
+  height: 40px; }
+
+/* Pagina contacto  */
 .comunicarte {
-        background: rgb(131,58,180);
-        background: linear-gradient(90deg, rgb(146, 128, 108) 0%, rgb(223, 174, 174) 5%, rgb(199, 118, 112) 18%, rgba(252,176,69,1) 51%, rgba(252,176,69,1) 77%); 
-        padding-left:0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-}
+  background: #833ab4;
+  background: linear-gradient(90deg, #92806c 0%, #dfaeae 5%, #c77670 18%, #fcb045 51%, #fcb045 77%);
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-
-.texto_casual{font-family: Helvetica;font-size: 100%;color: red;}
+.texto_casual {
+  font-family: Helvetica;
+  font-size: 100%;
+  color: red; }
 
 @media screen and (max-width: 600px) {
-/*Header mobile*/
-.header__contenedor {
-        height: 100px;
-        box-shadow: 0px 2px 10px rgb(165, 171, 196);
-        padding: 10px;
-        width: 97%;
-        position: relative;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-.header__lista{ list-style: none; }
-.header__logo img { width: 80px; }
-
-.header__mobile { display: flex;
-        flex-direction: column;
-        gap: 2rem; }
-.header__lista { display: flex;
-        flex-direction: column;
-        gap: 2rem; }
-
-.header__link { color: rgb(0, 4, 255);
-        font: oblique bold 120% cursive; }
-/* Fin del header mobile*/
-/* Pagina index mobile*/
-.grilla{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr ;
-        grid-template-areas:
-        "titulo" "vertical" "foto2" "servicio" "foto3""producto""footer";
-        justify-items: center;
-        grid-row-gap:10px ;
-        }
-.grilla .foto {visibility: hidden;}
-
- /* Página Proteger mobile*/       
-.Seleccion { display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 100px repeat(9,3fr 1fr) 100px 100px;
-        grid-template-areas: 
-        "titul"
-        "heladera" "check1"
-        "lavarropas" "check2"
-        "lavavajillas" "check3"
-         "horno" "check4"
-         "batidora" "check5"
-         "cafetera" "check6"
-                "aspiradora" "check7"
-         "celular" "check8"
-          "laptop""check9"
-        
-          
-        "boton"
-        "pie";
-        justify-items: center;}
-        .Seleccion #titulo{grid-area:titul;font-family: Helvetica;font-size: 100%;color: red;}
-
-}
+  /*Header mobile*/
+  .header__contenedor {
+    height: 100px;
+    box-shadow: 0px 2px 10px #a5abc4;
+    padding: 10px;
+    width: 97%;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__lista {
+    list-style: none; }
+  .header__logo img {
+    width: 80px; }
+  .header__mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+  .header__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+  .header__link {
+    color: #0004ff;
+    font: oblique bold 120% cursive; }
+  /* Fin del header mobile*/
+  /* Pagina index mobile*/
+  .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "titulo" "vertical" "foto2" "servicio" "foto3" "producto" "footer";
+    justify-items: center;
+    grid-row-gap: 10px; }
+  .grilla .foto {
+    visibility: hidden; }
+  /* Página Proteger mobile*/
+  .Seleccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(9, 3fr 1fr) 100px 100px;
+    grid-template-areas: "titul" "heladera" "check1" "lavarropas" "check2" "lavavajillas" "check3" "horno" "check4" "batidora" "check5" "cafetera" "check6" "aspiradora" "check7" "celular" "check8" "laptop" "check9" "boton" "pie";
+    justify-items: center; }
+  .Seleccion #titulo {
+    grid-area: titul;
+    font-family: Helvetica;
+    font-size: 100%;
+    color: red; } }

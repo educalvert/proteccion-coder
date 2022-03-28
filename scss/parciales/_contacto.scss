@@ -1,0 +1,12 @@
+  /* Pagina contacto  */
+  .comunicarte {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgb(146, 128, 108) 0%, rgb(223, 174, 174) 5%, rgb(199, 118, 112) 18%, rgba(252,176,69,1) 51%, rgba(252,176,69,1) 77%); 
+    padding-left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.texto_casual{font-family: Helvetica;font-size: 100%;color: red;}

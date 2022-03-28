@@ -1,0 +1,52 @@
+/* Página Proteger */
+.estructura { 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    max-width: 1000px;
+    width:80%;
+    min-height: 500px;
+    padding: 1rem; 
+} 
+
+.Seleccion { display: grid;       
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px repeat(3,3fr 1fr) 100px 100px;
+    grid-template-areas: 
+    "titul titul titul"
+    "heladera lavarropas lavavajillas"
+    "check1 check2 check3"
+    "horno batidora cafetera"
+    "check4 check5 check6"
+    "aspiradora celular laptop"
+    "check7 check8 check9"
+    "boton boton boton"
+    "pie pie pie";
+    justify-items: center;
+            
+}
+
+
+.Seleccion img{width: 100%; }
+.Seleccion #titulo{grid-area:titul;font-family: Helvetica;font-size: 40px;color: red;}
+.Seleccion .heladera {grid-area:heladera;}
+.Seleccion .aspiradora {grid-area:aspiradora;}
+.Seleccion .batidora {grid-area:batidora;}
+.Seleccion .cafetera {grid-area:cafetera;}
+.Seleccion .celular {grid-area:celular;}
+.Seleccion .lavavajillas {grid-area:lavavajillas;}
+.Seleccion .horno {grid-area:horno;}
+.Seleccion .laptop {grid-area:laptop;}
+.Seleccion .lavarropas{grid-area:lavarropas;}
+.Seleccion .check1 input {grid-area:check1; width: 40px;height: 40px;}
+.Seleccion .check2 input{grid-area:check2;width: 40px;height: 40px;}
+.Seleccion .check3 input{grid-area:check3;width: 40px;height: 40px;}
+.Seleccion .check4 input{grid-area:check4;width: 40px;height: 40px;}
+.Seleccion .check5 input {grid-area:check5;width: 40px;height: 40px;}
+.Seleccion .check6 input{grid-area:check6;width: 40px;height: 40px;}
+.Seleccion .check7 input{grid-area:check7;width: 40px;height: 40px;}
+.Seleccion .check8 input{grid-area:check8;width: 40px;height: 40px;}
+.Seleccion .check9 input{grid-area:check9;width: 40px;height: 40px;}                                              v
+.Seleccion button {grid-area: boton;} 
+.Seleccion footer {grid-area: pie;} 
+.check{width: 40px;height: 40px}
