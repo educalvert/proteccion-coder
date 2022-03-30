@@ -3,13 +3,12 @@
 .grilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 100px 200px 200px 100px;
+    grid-template-rows: 400px 100px 200px 200px;
     grid-template-areas:
     "foto foto foto"
     "titulo titulo titulo"
     "vertical foto2 servicio"
     "vertical foto3 producto"
-    "footer footer footer";
     justify-items: center;
     grid-row-gap:10px ;
     }
@@ -21,9 +20,6 @@
 .grilla .foto3{grid-area: foto3;}
 .grilla .servicio{grid-area:servicio;}
 .grilla .producto{grid-area:producto;}
-.grilla .footer{grid-area: footer;
-        display: flex; 
-        justify-self: stretch;}
 
 .foto img{width: 100%;height: 100%;}
 .foto2 img{width: 100%;height: 100%;}
@@ -49,6 +45,9 @@
 50%{width: 100px;}
 75%{width: 80px;}
 100%{width: 60px;}}
+
+.footer{display: flex;
+    justify-self: stretch;}
 
 .futer__logo img { width: 60px; margin-top:4.5rem;transition: all 2s;animation-name: efectoss;animation-timing-function: linear;animation-duration: 10s;animation-iteration-count: infinite; }
 .futer__logo img:hover{transform: rotate(360deg);}
