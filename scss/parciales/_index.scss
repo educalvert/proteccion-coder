@@ -3,12 +3,12 @@
 .grilla{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 100px 200px 200px;
+    grid-template-rows: map-get($anchos,4cien) map-get($anchos, cien) map-get($anchos,2cien) map-get($anchos,2cien);
     grid-template-areas:
     "foto foto foto"
     "titulo titulo titulo"
     "vertical foto2 servicio"
-    "vertical foto3 producto"
+    "vertical foto3 producto";
     justify-items: center;
     grid-row-gap:10px ;
     }

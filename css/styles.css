@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Este header lo comparten todas las páginas */
 .header__contenedor {
   height: 100px;
@@ -46,12 +45,11 @@
 .grilla {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 100px 200px 200px 100px;
+  grid-template-rows: 400px 100px 200px 200px;
   grid-template-areas: "foto foto foto"
  "titulo titulo titulo"
  "vertical foto2 servicio"
- "vertical foto3 producto"
- "footer footer footer";
+ "vertical foto3 producto";
   justify-items: center;
   grid-row-gap: 10px; }
 
@@ -80,11 +78,6 @@
 
 .grilla .producto {
   grid-area: producto; }
-
-.grilla .footer {
-  grid-area: footer;
-  display: flex;
-  justify-self: stretch; }
 
 .foto img {
   width: 100%;
@@ -143,6 +136,10 @@
     width: 80px; }
   100% {
     width: 60px; } }
+
+.footer {
+  display: flex;
+  justify-self: stretch; }
 
 .futer__logo img {
   width: 60px;
@@ -262,7 +259,7 @@
   width: 40px;
   height: 40px; }
 
-v
+
 .Seleccion button {
   grid-area: boton; }
 
