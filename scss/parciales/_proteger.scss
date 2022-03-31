@@ -38,15 +38,15 @@
 .Seleccion .horno {grid-area:horno;}
 .Seleccion .laptop {grid-area:laptop;}
 .Seleccion .lavarropas{grid-area:lavarropas;}
-.Seleccion .check1 input {grid-area:check1; width: 40px;height: 40px;}
-.Seleccion .check2 input{grid-area:check2;width: 40px;height: 40px;}
-.Seleccion .check3 input{grid-area:check3;width: 40px;height: 40px;}
-.Seleccion .check4 input{grid-area:check4;width: 40px;height: 40px;}
-.Seleccion .check5 input {grid-area:check5;width: 40px;height: 40px;}
-.Seleccion .check6 input{grid-area:check6;width: 40px;height: 40px;}
-.Seleccion .check7 input{grid-area:check7;width: 40px;height: 40px;}
-.Seleccion .check8 input{grid-area:check8;width: 40px;height: 40px;}
-.Seleccion .check9 input{grid-area:check9;width: 40px;height: 40px;}                                              v
+.Seleccion .check1 input {grid-area:check1; @include tamaniocheck(40px,40px)}
+.Seleccion .check2 input{grid-area:check2;@include tamaniocheck(40px,40px);}
+.Seleccion .check3 input{grid-area:check3;@include tamaniocheck(40px,40px);}
+.Seleccion .check4 input{grid-area:check4;@include tamaniocheck(40px,40px);}
+.Seleccion .check5 input {grid-area:check5;@include tamaniocheck(40px,40px);}
+.Seleccion .check6 input{grid-area:check6;@include tamaniocheck(40px,40px);}
+.Seleccion .check7 input{grid-area:check7;@include tamaniocheck(40px,40px);}
+.Seleccion .check8 input{grid-area:check8;@include tamaniocheck(40px,40px);}
+.Seleccion .check9 input{grid-area:check9;@include tamaniocheck(40px,40px);}                                              v
 .Seleccion button {grid-area: boton;} 
 .Seleccion footer {grid-area: pie;} 
 .check{width: 40px;height: 40px}
