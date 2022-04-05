@@ -42,78 +42,18 @@
 
 /* Fin del header */
 /* Página index */
-.grilla {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 100px 200px 200px;
-  grid-template-areas: "foto foto foto" "titulo titulo titulo" "vertical foto2 servicio" "vertical foto3 producto";
-  justify-items: center;
-  grid-row-gap: 10px; }
+.contraste {
+  background-color: #d1d1d1; }
 
-.grilla .foto {
-  grid-area: foto; }
+.sinpunto li {
+  list-style: none; }
 
-.grilla .titulo {
-  grid-area: titulo;
-  font-family: Helvetica;
-  font-size: 200%;
-  color: red; }
+.alinear {
+  justify-content: right; }
 
-.grilla .vertical {
-  grid-area: vertical;
-  border: 5px solid #e69090;
-  overflow: hidden; }
-
-.grilla .foto2 {
-  grid-area: foto2; }
-
-.grilla .foto3 {
-  grid-area: foto3; }
-
-.grilla .servicio {
-  grid-area: servicio; }
-
-.grilla .producto {
-  grid-area: producto; }
-
-.foto img {
-  width: 100%;
-  height: 100%; }
-
-.foto2 img {
-  width: 100%;
-  height: 100%; }
-
-.foto3 img {
-  width: 100%;
-  height: 100%; }
-
-.vertical_flex img {
-  width: 80%;
-  height: auto; }
-
-.vertical_flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
-  text-align: center; }
-
-.grilla .servicio ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.grilla .servicio {
-  margin-left: 25px; }
-
-.grilla .producto ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.tituloh3 {
-  font-size: 20px; }
+.colorcaption {
+  color: black;
+  font-weight: bolder; }
 
 .futer {
   display: flex;
@@ -147,7 +87,6 @@
 .futer__logo img:hover {
   transform: rotate(360deg); }
 
-/* Página Proteger */
 .check {
   width: 40px;
   height: 40px; }

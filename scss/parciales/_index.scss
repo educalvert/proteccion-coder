@@ -1,43 +1,47 @@
 /* Página index */
 
-.grilla{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: map-get($anchos,4cien) map-get($anchos, cien) map-get($anchos,2cien) map-get($anchos,2cien);
-    grid-template-areas:
-    "foto foto foto"
-    "titulo titulo titulo"
-    "vertical foto2 servicio"
-    "vertical foto3 producto";
-    justify-items: center;
-    grid-row-gap:10px ;
-    }
+// .grilla{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: map-get($anchos,4cien) map-get($anchos, cien) map-get($anchos,2cien) map-get($anchos,2cien);
+//     grid-template-areas:
+//     "foto foto foto"
+//     "titulo titulo titulo"
+//     "vertical foto2 servicio"
+//     "vertical foto3 producto";
+//     justify-items: center;
+//     grid-row-gap:10px ;
+//     }
    
-.grilla .foto {grid-area: foto;}
-.grilla .titulo{grid-area: titulo;font-family: Helvetica;font-size: 200%;color: red;}
-.grilla .vertical{grid-area: vertical;border:5px solid rgb(230, 144, 144);overflow: hidden;}
-.grilla .foto2{grid-area: foto2;}
-.grilla .foto3{grid-area: foto3;}
-.grilla .servicio{grid-area:servicio;}
-.grilla .producto{grid-area:producto;}
+// .grilla .foto {grid-area: foto;}
+// .grilla .titulo{grid-area: titulo;font-family: Helvetica;font-size: 200%;color: red;}
+// .grilla .vertical{grid-area: vertical;border:5px solid rgb(230, 144, 144);overflow: hidden;}
+// .grilla .foto2{grid-area: foto2;}
+// .grilla .foto3{grid-area: foto3;}
+// .grilla .servicio{grid-area:servicio;}
+// .grilla .producto{grid-area:producto;}
 
-.foto img{width: 100%;height: 100%;}
-.foto2 img{width: 100%;height: 100%;}
-.foto3 img{width: 100%;height: 100%;}
-.vertical_flex  img{width: 80%;height: auto;}
-.vertical_flex{display: flex; flex-direction: column;justify-content: right;align-items: center;text-align: center; }
-.grilla .servicio ul{ list-style: none; margin: 0;  padding: 0;}
- .grilla .servicio{ margin-left: 25px; } 
+// .foto img{width: 100%;height: 100%;}
+// .foto2 img{width: 100%;height: 100%;}
+// .foto3 img{width: 100%;height: 100%;}
+// .vertical_flex  img{width: 80%;height: auto;}
+// .vertical_flex{display: flex; flex-direction: column;justify-content: right;align-items: center;text-align: center; }
+// .grilla .servicio ul{ list-style: none; margin: 0;  padding: 0;}
+//  .grilla .servicio{ margin-left: 25px; } 
 
-.grilla .producto ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;}
-.tituloh3{
-        font-size: 20px;
-}
+// .grilla .producto ul{
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;}
+// .tituloh3{
+//         font-size: 20px;
+
 // .ajusto{height: 300px;}
 
+.contraste{background-color:rgb(209, 209, 209);}
+.sinpunto li{list-style: none;}
+.alinear {justify-content: right;}
+.colorcaption{color:black; font-weight: bolder;}
 .futer{display: flex;
         flex-direction: row;
         }
