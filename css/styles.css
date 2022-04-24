@@ -135,11 +135,8 @@
   flex-direction: column;
   align-items: center; }
 
-body {
-  background-image: "../img/aspiradora.jpg";
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%; }
+.boton__enviar {
+  padding-top: 20px; }
 
 .texto_casual {
   font-family: Helvetica;
