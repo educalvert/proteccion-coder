@@ -6,28 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protección de equipos</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/4b3e1453a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="description" content="Aseguramos y reparamos tus equipos electrónicos y electrodomésticos de tu hogar. Repuestos originales y técnicos expertos.">
     <meta name="keywords" content="seguro, protección, electrodomésticos, equipos electrónicos, reparación, servicio técnico, faq, consultas, preguntas frecuentes">
 
 </head>
 <body>
-    <header class="header"  >
-        <div class="header__contenedor header__mobile">
-            <div class="header__logo"> <img src="../img/Imagen1.png" alt="Protección Total" ></div>
-            <ul class="header__lista">
-                <li><a class="header__link" href="../index.html">Inicio</a></li>
-                <li><a class="header__link" href="proteger.html">Proteger Mis Equipos</a></li>
-                <li><a class="header__link" href="quienes.html">Quiénes Somos</a></li>
-                <li><a class="header__link" href="contacto.html">Contacto</a></li>
-                <li class="enlace_activo">Preguntas Frecuentes</li>
-                <li><a class=eader__link" href="contacto.html">Soy Cliente</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid header__contenedor header__logo">
+        
+        <img src="../img/Imagen1.png" alt="Protección Total" onclick="window.location.href='../index.html'">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse links__nav" id="navbarNav">
+            <ul class="navbar-nav header__lista">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="proteger.html">Proteger Mis Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienes.html">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active bg-info text-white bg-dark bg__link__activo" aria-current="page" href="faq.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="soycliente.html">Soy Cliente</a>
+                </li>
             </ul>
         </div>
-    </header>
+      </div>
+  </nav>
+</header>
+    
 
-
+<section>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -66,24 +90,24 @@
           </div>
         </div>
         <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
             ¿Las reparaciones tienen garantía?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, sint. Iure, voluptas voluptatem officia, cupiditate unde reprehenderit voluptatum similique cum quaerat quidem facere! Quidem laudantium ab nostrum pariatur minus nemo. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
               ¿Dónde puedo ver el estado de mi reparación?
               </button>
             </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>YES </strong> Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, sint. Iure, voluptas voluptatem officia, cupiditate unde reprehenderit voluptatum similique cum quaerat quidem facere! Quidem laudantium ab nostrum pariatur minus nemo. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
@@ -91,54 +115,121 @@
           </div>
       </div>
     
-<!-- <section class="comunicarte">
-    <div>
-        <ol>
-            <li><a href="#1">Tuve un problema con un equipo. ¿A quién llamo?</a></li>
-            <br>
-            <li><a href="#2">¿Dónde puedo ver mi póliza?</a></li>
-            <br>
-            <li><a href="#3">¿Dónde puedo ver el estado de mi reparación?</a></li>
-            <br>
-            <li><a href="#4">¿Las reparaciones tienen garantía?</a></li>
-            <br>
-            <li><a href="#5">¿Dónde puedo ver mi póliza?</a></li>
-            <br>
-            <li><a href="#6">¿Dónde puedo ver el estado de mi reparación?</a></li>
-            <br>
-        </ol>
-    </div>
 
 </section>
-<br>
-<section>
-    <a name="1" id="1"></a>
-    
-    <p>Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, sint. Iure, voluptas voluptatem officia, cupiditate unde reprehenderit voluptatum similique cum quaerat quidem facere! Quidem laudantium ab nostrum pariatur minus nemo.</p>
-    <a name="2" id="2"></a>
-    <p>Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt a perspiciatis sed odio commodi, consectetur, repudiandae facere cupiditate molestiae reiciendis consequuntur aliquid odit ipsum tenetur omnis molestias excepturi neque nihil.
-    Maiores, necessitatibus iure rerum quo nobis eveniet quam sunt animi omnis dolorem repellat fuga blanditiis voluptatum provident repudiandae doloremque, odio modi, aut quis corrupti labore. Aperiam in non impedit provident?
-    Enim vel neque maxime harum accusamus minus, dolorum maiores similique suscipit eaque cupiditate adipisci tempore consectetur incidunt commodi animi eos velit in, sequi alias! Soluta hic dolor cupiditate! Ad, praesentium!
-    Quia, tempore itaque. Quibusdam ullam inventore obcaecati, incidunt iusto assumenda aspernatur laboriosam qui corporis dicta fugiat id molestiae natus a. Possimus voluptate, consequuntur animi mollitia nulla architecto temporibus adipisci numquam.</p>
-    <a name="3" id="3"></a>
-    <p>Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quisquam provident, amet ex vitae nostrum perspiciatis. Vel, mollitia dolores. Eum quo modi unde veniam omnis earum fugiat repellat molestiae numquam?
-    Quod a corporis dignissimos quae dolor exercitationem nulla accusantium eum explicabo hic voluptas vero ipsam nihil, maxime repellendus aliquid laudantium non? Incidunt rerum sed molestiae, ipsam ut sunt expedita a?</p>
-    <a name="4" id="4"></a>
-    <p>Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt praesentium, reprehenderit nulla est nemo velit dolor harum possimus recusandae! Reiciendis ducimus atque nesciunt in sint quo incidunt iusto dolorum dolores. </p>
-    <a name="5" id="5"></a>
-    <p>Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, iste totam. Minus, cupiditate fugit enim incidunt porro fugiat numquam? Molestiae consequuntur modi pariatur inventore quae similique ad nobis autem qui!
-    Voluptate sint esse hic error rem, dolore distinctio impedit asperiores exercitationem nihil ducimus. Numquam neque odio, corrupti vero debitis amet inventore quod ullam voluptatem mollitia exercitationem quia consequatur aut unde.
-    Voluptate ratione quae similique itaque ut rem et numquam fuga quod eius at nisi neque iure, culpa nihil, tempore, totam ipsum eum ipsa quidem quisquam perspiciatis in veniam. Quas, commodi?
-    Eaque, minus. Voluptatum voluptatem sed iure eveniet enim ipsa maiores minus culpa ea laudantium molestias veritatis magni consequuntur rem corrupti, dicta modi nobis sint libero itaque. Quae neque molestiae quasi.
-    Repudiandae ratione dolorum libero obcaecati rem nulla cum saepe minima hic optio quod mollitia esse animi velit eum tenetur totam, quae tempore perspiciatis similique sint ipsa itaque? Voluptates, modi rerum.
-    Quisquam debitis vel molestias unde perspiciatis, nesciunt, perferendis minus eius ea tempore dolore dicta quos sint voluptatum necessitatibus ut maxime repellat! Molestiae quo explicabo numquam minus vel ad. Sunt, fuga.
-    Eius labore fugiat porro sint distinctio debitis deleniti. Nihil voluptatem, architecto eius odio ducimus iure laboriosam consequuntur illo debitis mollitia eum quasi dignissimos accusamus beatae, distinctio ipsa libero at et.
-    Quia, minus. Animi, aut? Dolorem, magni facere. Maxime, vitae. Non, doloribus eius architecto delectus quos, maxime eum expedita tempora sequi, voluptatem ex facilis aut provident! Laboriosam tempore odio assumenda ipsam?
-    Quia maiores quasi illum dolores magni deleniti aperiam ipsum similique adipisci. Fugit fuga perferendis culpa, nulla, nesciunt, reiciendis id corporis officiis autem nam quae! Quae corporis soluta dolorem voluptatibus ipsum?
-    Esse, dicta! Repellat voluptatibus quia, quidem excepturi harum tempora explicabo ut, autem iusto, eos natus esse sint perspiciatis rem est? Veniam excepturi quis sint fuga labore illo voluptas nesciunt porro?
-    </p>
-    <a name="6" id="6"></a>
-    <p>Podés comunicarte a nuestro 0800090998 o por mail a info@proteccion.com.ar</p> -->
-</section>
+<div class="container my-5">
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #45526e">
+      <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+              <!--Grid row-->
+              <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">
+                          Protección del Hogar S.A.
+                      </h6>
+                      <p>
+                          Desde 1975 brindando seguros y servicios de valor agregado para la vivienda y las
+                          personas. Protegiendo lo que más importa.
+                      </p>
+                  </div>
+                  <hr class="w-100 clearfix d-md-none" />
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+                      <p>
+                          <a class="text-white">Electrodomésticos</a>
+                      </p>
+                      <p>
+                          <a class="text-white">Audio</a>
+                      </p>
+                      <p>
+                          <a class="text-white">Video y TV</a>
+                      </p>
+                      <p>
+                          <a class="text-white">Computadoras</a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->
+
+                  <hr class="w-100 clearfix d-md-none" />
+
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">
+                          Ya Soy Cliente
+                      </h6>
+                      <p>
+                          <a class="text-white" href="../files/contacto.html">Mi Cuenta</a>
+                      </p>
+                      <p>
+                          <a class="text-white" href="../files/contacto.html">Mis Reclamos</a>
+                      </p>
+                      <p>
+                          <a class="text-white" href="../files/contacto.html">Mis Pólizas</a>
+                      </p>
+                      <p>
+                          <a class="text-white" href="../files/contacto.html">Ayuda</a>
+                      </p>
+                  </div>
+
+                  <!-- Grid column -->
+                  <hr class="w-100 clearfix d-md-none" />
+
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Dirección</h6>
+                      <p><i class="fas fa-home mr-3"></i> Ing. Butty 650, CABA</p>
+                      <p><i class="fas fa-envelope mr-3"></i> abonados@gmail.com</p>
+                      <p><i class="fas fa-phone mr-3"></i> + 54 234 567 88</p>
+                      <p><i class="fas fa-print mr-3"></i> + 54 234 567 89</p>
+                  </div>
+                  <!-- Grid column -->
+              </div>
+              <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-3">
+
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0">
+              <div class="row d-flex align-items-center">
+                  <!-- Grid column -->
+                  <div class="col-md-7 col-lg-8 text-center text-md-start">
+                      <!-- Copyright -->
+                      <div class="p-3">
+                          © 2022 Protección del Hogar S.A.:
+                          <a class="text-white"
+                              href="https://github.com/educalvert/proteccion-coder">contacto.com</a>
+                      </div>
+                      <!-- Copyright -->
+                  </div>
+                  <!-- Grid column -->
+
+                  <!-- Grid column -->
+                  <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                      <!-- Facebook -->
+                      <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-facebook-f"></i> </a>
+
+                      <!-- Twitter -->
+                      <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-twitter"></i></a>
+
+                      <!-- Google -->
+                      <a class="btn btn-outline-light btn-floating m- text-white" role="button"><i class="fab fa-google"></i></a>
+
+                      <!-- Instagram -->
+                      <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <!-- Grid column -->
+              </div>
+          </section>
+          
+      </div>
+      <!-- Grid container -->
+  </footer>
+</div>   
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+</html>

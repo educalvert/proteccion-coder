@@ -7,26 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protección de equipos</title>
     <link rel="icon" type="image/png" href="./img/Imagen1.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/4b3e1453a4.js" crossorigin="anonymous"></script> 
     <meta name="description" content="Aseguramos y reparamos tus equipos electrónicos y electrodomésticos de tu hogar. Repuestos originales y técnicos expertos.">
     <meta name="keywords" content="seguro, protección, electrodomésticos, equipos electrónicos, reparación, servicio técnico">
   </head>
 
 <body>
-    <header class="header">
-        <div class="header__contenedor header__mobile">
-            <div class="header__logo"> <img src="./img/Imagen1.png" alt="Protección Total"></div>
-            <ul class="header__lista">
-                <li class="enlace_activo">Inicio</li>
-                <li><a class="header__link" href="./files/proteger.html">Proteger Mis Equipos</a></li>
-                <li><a class="header__link" href="./files/quienes.html">Quiénes Somos</a></li>
-                <li><a class="header__link" href="./files/contacto.html">Contacto</a></li>
-                <li><a class="header__link" href="./files/faq.html">Preguntas Frecuentes</a></li>
-                <li><a class="header__link" href="./files/contacto.html">Soy Cliente</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid header__contenedor header__logo">
+        
+        <img src="./img/Imagen1.png" alt="Protección Total" onclick="window.location.href='index.html'">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse links__nav" id="navbarNav">
+            <ul class="navbar-nav header__lista">
+                
+                <li class="nav-item">
+                    <a class="nav-link active bg-info text-white bg-dark bg__link__activo" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="./files/proteger.html">Proteger Mis Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./files/quienes.html">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./files/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./files/faq.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./files/contacto.html">Soy Cliente</a>
+                </li>
             </ul>
         </div>
-   </header>
+      </div>
+  </nav>
+</header>
+
   
    
     <div id="carouselExampleCaptions" class="carousel slide col-sm-12" data-bs-ride="carousel">
@@ -80,7 +104,7 @@
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="./img/contento.png" class="img-fluid rounded-start" alt="Cliente contento">
+                  <img src="./img/contento.png" class="img-fluid rounded-start cardas" alt="Cliente contento">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -95,12 +119,12 @@
             <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="./img/Imagen1.jpg" class="img-fluid rounded-start" alt="Cliente contento">
+                  <img src="./img/Imagen1.jpg" class="img-fluid rounded-start cardas" alt="Cliente contento">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title">Cómo Proteger</h5>
-                    <p class="card-text">Por una prima mensual accesible, tenés tus equipos elegidos protegidos ante fallas y desperfectos mecánicos y eléctricos. </p>
+                    <p class="card-text">Por una prima mensual accesible tus equipos elegidos estarán protegidos ante falla o desperfecto mecánico. </p>
                   </div>
                 </div>
               </div>
@@ -120,39 +144,138 @@
           </div>
         </div>
                
-                
-         
-                <div class="row">
-            <div class="col-sm-6">
-                <h3 class="mb-5 mt-5">Con la seguridad de contar con especialistas</h3>
-                <ul>
-                    <li> No hay letra chica </li>
-                    <li> Repuestos originales </li>
-                    <li> Garantía de reparación por 12 meses</li>
-                    <li> Presupuesto sin cargo</li>
-                </ul>
-            </div>
-            
-        </div>
-
-        <div class="row">
-            <img class="col-sm-5" src="./img/cocinanene.jpg" alt="Protección Total">
-            <div class="col-sm-7">
-                <h4 class="mb-5 mt-5"> Actualmente existen 8 equipos en cada hogar, promedio, entre electrónicos y
-                    electrodomésticos. </h4>
-                <h4 class="mb-5">En promedio, existe más de una falla por año en cada hogar.</h4>
-                <h4 class="mb-5">El 55% de las familias no tienen un taller de confianza donde pedir presupuestos de
-                    reparación.</h4>
-            </div>
-        </div>
+                      
+     
     </section>
-        <footer>
+    <section class="container">
+      <div class="row defino">
+                     
+          <img class="col-md-4 col-12 imex" src="./img/aspiradora.jpg" alt="Aspiradora">
+          <img class="col-md-4 col-12 imex" src="./img/televisor.jpg" alt="TV">
+          <img class="col-md-4 col-12 imex" src="./img/cafetera.jpg" alt="Cafetera">
           
-              <h6>Protección del Hogar S.A. - Todos los derechos Reservados - Ciudad de Paz 2032, CABA, Argentina - Año
-                2022 </h6>
-        </footer>
+      </div>
+    </section> 
+
+
+        
    
     <script src="./js/bootstrap.bundle.js"></script>
-</body>
 
+
+<div class="container my-5">
+  <!-- Footer -->
+  <footer  class="text-center text-lg-start text-white" style="background-color: #45526e">
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Protección del Hogar S.A.
+            </h6>
+            <p>
+              Desde 1975 brindando seguros y servicios de valor agregado para la vivienda y las personas. Protegiendo lo que más importa.
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+            <p>
+              <a class="text-white">Electrodomésticos</a>
+            </p>
+            <p>
+              <a class="text-white">Audio</a>
+            </p>
+            <p>
+              <a class="text-white">Video y TV</a>
+            </p>
+            <p>
+              <a class="text-white">Computadoras</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Ya Soy Cliente
+            </h6>
+            <p>
+              <a class="text-white" href="./files/contacto.html">Mi Cuenta</a>
+            </p>
+            <p>
+              <a class="text-white" href="./files/contacto.html">Mis Reclamos</a>
+            </p>
+            <p>
+              <a class="text-white" href="./files/contacto.html">Mis Pólizas</a>
+            </p>
+            <p>
+              <a class="text-white" href="./files/contacto.html">Ayuda</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Dirección</h6>
+            <p><i class="fas fa-home mr-3"></i> Ing. Butty 650, CABA</p>
+            <p><i class="fas fa-envelope mr-3"></i> abonados@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 54 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 54 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2022 Protección del Hogar S.A.:
+              <a class="text-white" href="https://github.com/educalvert/proteccion-coder">contacto.com</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-facebook-f"></i> </a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+</body>
 </html>

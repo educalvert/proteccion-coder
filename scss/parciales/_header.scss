@@ -1,4 +1,7 @@
 /* Este header lo comparten todas las páginas */
+
+.bg__link__activo{
+        border-radius: 2rem; }
 .header__contenedor {
         height: 100px;
         box-shadow: 0px 2px 10px rgb(165, 171, 196);
@@ -10,7 +13,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center; }
-.header__lista{ list-style: none; }
+.header__lista{ list-style: none;
+color: blue; }
 .header__logo img { width: 80px;transition: all 4s; }
 .header__logo img:hover{transform: rotate(360deg);}
 .header__lista { display: flex;  flex-direction: row;   gap: 2rem; }
